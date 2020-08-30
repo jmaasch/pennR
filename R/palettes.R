@@ -39,7 +39,9 @@ penn_palettes <- list(
 #' @export
 #'
 penn <- function(palette_name) {
+
   return(penn_palettes[[palette_name]])
+
 }
 
 #' Generate demo plot for single palette.
@@ -83,6 +85,7 @@ penn.demo <- function(palette_name) {
                                ggplot2::aes(x = Label,
                                             y = Value)) +
     ggplot2::geom_bar(stat = "identity",
+                      position = "dodge",
                       ggplot2::aes(fill = Label)) +
     ggthemes::theme_tufte() +
     ggplot2::scale_fill_manual(values = penn_palettes[[palette_name]],
@@ -95,6 +98,7 @@ penn.demo <- function(palette_name) {
     ggplot2::labs(title = palette_name)
 
   return(demo_plot)
+
 }
 
 #' Generate demo plot for all palettes.
@@ -107,8 +111,9 @@ penn.demo <- function(palette_name) {
 #' @export
 #'
 penn.demo.all <- function() {
+
   # Init empty list for plots.
-  plot_list <- vector("list", 15)
+  plot_list <- vector("list", 13)
   i <- 1
 
   # Loop through all palettes.
@@ -125,6 +130,7 @@ penn.demo.all <- function() {
   }
 
   return(plot_list)
+
 }
 
 # Define global variables.
