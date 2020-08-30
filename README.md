@@ -61,7 +61,7 @@ All palettes are stored in exported lists:
 To use a palette, pass the desired palette name as a string to one of the following functions:
 
 ```R
-my_palette <- > penn("Blue 5")
+my_palette <- penn("Blue 5")
 ```
 
 Demo plots can be viewed by invoking the `penn.demo()` and `penn.demo.all()` functions. 
