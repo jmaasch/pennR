@@ -1,6 +1,4 @@
-# `pennR`
-
-### `pennR`: University of Pennsylvania Color Palettes
+# `pennR` | University of Pennsylvania Color Palettes
 
 Color palettes for R data visualization based on the official school colors of the University of Pennsylvania.
 
