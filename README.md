@@ -13,7 +13,7 @@ Built by JRMA Maasch (2020).
 
 * **[About](#About)** &nbsp; | &nbsp; [License](#License)
 * **[Usage](#Usage)** &nbsp; | &nbsp; [Installation](#Installation) &nbsp; | &nbsp; [Documentation](#Documentation) &nbsp; | &nbsp; [Use with ggplot2](#Use-with-ggplot2) &nbsp; | &nbsp; [Use with base R](#Use-with-base-R)
-* **[View demo plots](#View-demo-plots)** &nbsp; | &nbsp; [Autumn](#Autumn) &nbsp; | &nbsp; [Sea](#Sea) &nbsp; | &nbsp; [Earth](#Earth) &nbsp; | &nbsp; [Berry](#Berry)
+* **[View demo plots](#View-demo-plots)** &nbsp; | &nbsp; [Classic palettes](#Classic-palettes) &nbsp; | &nbsp; [Interpolated palettes](#Interpolated-palettes)
 
 ## About
 
