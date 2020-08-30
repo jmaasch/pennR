@@ -1,0 +1,20 @@
+Package: penn
+Title: University of Pennsylvania Color Palettes
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Jacqueline",
+           family = "Maasch",
+           role = c("aut", "cre"),
+           email = "jacqueline.maasch@gmail.com",
+           comment = c(ORCID = "https://orcid.org/0000-0003-0432-3547"))
+Description: Color palettes for R data visualization based on the official school colors
+    of the University of Pennsylvania.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
+Imports:
+    ggplot2,
+    ggthemes
+
