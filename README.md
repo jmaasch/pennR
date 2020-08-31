@@ -9,8 +9,6 @@ Built by JRMA Maasch (2020).
 
 ***Note:*** *This package is not endorsed in any way by the University of Pennsylvania.*
 
-<img src="https://github.com/jmaasch/pennR/blob/master/figures/UniversityofPennsylvania_Shield_RGB.jpg" width="100" align="right"/>
-
 ### Table of contents
 
 * **[About](#About)** &nbsp; | &nbsp; [License](#License)
