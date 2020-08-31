@@ -3,6 +3,8 @@
 
 Color palettes for R data visualization based on the official school colors of the University of Pennsylvania.
 
+![density](https://github.com/jmaasch/pennR/blob/master/figures/density_grid.jpg)
+
 Built by JRMA Maasch (2020).
 
 ***Note:*** *This package is not endorsed in any way by the University of Pennsylvania.*
