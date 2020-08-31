@@ -63,12 +63,12 @@ penn.demo <- function(palette_name) {
                      Label = c(penn_palettes[[palette_name]][1]))
   }
   else if (length(penn_palettes[[palette_name]]) == 2) {
-    df <- data.frame(Value = c(6, 4),
+    df <- data.frame(Value = c(4, 6),
                      Label = c(penn_palettes[[palette_name]][1],
                                penn_palettes[[palette_name]][2]))
   }
-  else if (length(penn_palettes[[palette_name]]) == 3) {
-    df <- data.frame(Value = c(6, 4, 2),
+  else if (palette_name == "Red-Blue-White") {
+    df <- data.frame(Value = c(6, 4, 3),
                      Label = c(penn_palettes[[palette_name]][1],
                                penn_palettes[[palette_name]][2],
                                penn_palettes[[palette_name]][3]))
@@ -86,6 +86,12 @@ penn.demo <- function(palette_name) {
   # Generate plot.
   # If palette is 1, 2, or 3 values long:
   if (length(penn_palettes[[palette_name]]) <= 3) {
+    if (length(penn_palettes[[palette_name]]) == 1) {
+      line_color <- penn_palettes[[palette_name]][1]
+    }
+    else {
+      line_color <- "#000000"
+    }
     pie <- ggplot2::ggplot(df,
                            ggplot2::aes(x = "",
                                         y = Value,
@@ -93,7 +99,7 @@ penn.demo <- function(palette_name) {
           ggthemes::theme_tufte() +
           ggplot2::geom_bar(stat = "identity",
                             width = 1,
-                            color = "#000000") +
+                            color = line_color) +
           ggplot2::coord_polar("y",
                                start = 0) +
           ggplot2::scale_fill_manual(values = penn_palettes[[palette_name]]) +
@@ -104,7 +110,7 @@ penn.demo <- function(palette_name) {
                         y = "",
                         fill = "",
                         title = palette_name)
-    return(pie)
+    return(invisible(pie))
   }
   # Else:
   bar <- ggplot2::ggplot(df,
@@ -123,7 +129,7 @@ penn.demo <- function(palette_name) {
                                                           size = 16)) +
         ggplot2::labs(title = palette_name)
 
-  return(bar)
+  return(invisible(bar))
 
 }
 
