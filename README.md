@@ -95,7 +95,7 @@ Coming soon.
 
 &#8593; [return to top](#pennR)
 
-<img src="https://github.com/jmaasch/pennR/blob/master/figures/heat.jpg" width="400" align="right"/>
+<img src="https://github.com/jmaasch/pennR/blob/master/figures/heat.jpg" width="300" align="right"/>
 
 ### Use with base R
 
