@@ -98,7 +98,7 @@ The following reproducible example produces the plots below.
 set.seed(5)
 df <- data.frame(Label = factor(rep(c("A", "B", "C"), each = 200)),
                  Value = round(c(rnorm(200, mean = 55, sd = 5), 
-                                 rnorm(200, mean = 65, sd= 5),
+                                 rnorm(200, mean = 65, sd = 5),
                                  rnorm(200, mean = 70, sd = 4))))
 # Construct plot.
 density <- ggplot(df, 
