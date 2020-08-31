@@ -64,14 +64,18 @@ penn.demo <- function(palette_name) {
   }
   else if (length(penn_palettes[[palette_name]]) == 2) {
     df <- data.frame(Value = c(4, 6),
-                     Label = c(penn_palettes[[palette_name]][1],
-                               penn_palettes[[palette_name]][2]))
+                     Label = c(penn_palettes[[palette_name]][2],
+                               penn_palettes[[palette_name]][1]))
   }
   else if (palette_name == "Red-Blue-White") {
     df <- data.frame(Value = c(6, 4, 3),
                      Label = c(penn_palettes[[palette_name]][1],
                                penn_palettes[[palette_name]][2],
                                penn_palettes[[palette_name]][3]))
+  }
+  else if (length(penn_palettes[[palette_name]]) == 3) {
+    df <- data.frame(Value = c(4, 6, 9),
+                     Label = c(1, 2, 3))
   }
   else if (length(penn_palettes[[palette_name]]) == 5) {
     df <- data.frame(Value = c(4, 6, 3, 7, 9),
@@ -161,7 +165,7 @@ penn.demo.all <- function() {
 
   }
 
-  return(plot_list)
+  return(invisible(plot_list))
 
 }
 
