@@ -97,7 +97,20 @@ Coming soon.
 
 ### Use with base R
 
-Coming soon.
+<img src="https://github.com/jmaasch/pennR/blob/master/figures/heat.jpg" width="500" align="right"/>
+
+The following reproducible example produces the plot at right.
+
+```r
+# Construct base R heatmap.
+df <- scale(mtcars)
+heatmap(df, 
+        scale = "row",
+        col = penn("Blue 8"),
+        labRow = FALSE, 
+        labCol = FALSE)
+```
+
 
 &#8593; [return to top](#pennR)
 
