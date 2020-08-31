@@ -1,4 +1,4 @@
-# `pennR` | University of Pennsylvania Color Palettes
+# `pennR`: University of Pennsylvania Color Palettes
 
 Color palettes for R data visualization based on the official school colors of the University of Pennsylvania.
 
@@ -94,12 +94,12 @@ Coming soon.
 
 ### Classic palettes
 
-Coming soon.
+![classic](https://github.com/jmaasch/pennR/blob/master/figures/classic_grid.jpg)
 
 &#8593; [return to top](#pennR)
 
 ### Interpolated palettes
 
-Coming soon.
+![interp](https://github.com/jmaasch/pennR/blob/master/figures/interp_grid.jpg)
 
 &#8593; [return to top](#pennR)
