@@ -19,7 +19,10 @@ This package provides 13 color palettes based on the official school colors of t
 
 Two categories of palettes are provided: "classic" palettes, which adhere strictly to the official color values of the Penn logo, and "interpolated" palettes, which interpolate between official Penn colors and white. For more information on the Penn logo, see https://branding.web-resources.upenn.edu/elements-penn-logo.
 
-![logo](https://github.com/jmaasch/pennR/blob/master/figures/penn_logo.jpg)
+![logo](https://github.com/jmaasch/pennR/blob/master/figures/UniversityofPennsylvania_FullLogo_RGB.jpg)
+<p align="center">
+<img src="https://github.com/jmaasch/pennR/blob/master/figures/penn_colors.jpg" width="600"/>
+ </p>
 ![colors](https://github.com/jmaasch/pennR/blob/master/figures/penn_colors.jpg)
 
 
