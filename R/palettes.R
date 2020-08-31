@@ -59,16 +59,19 @@ penn.demo <- function(palette_name) {
 
   # Construct dataframe.
   if (length(penn_palettes[[palette_name]]) == 1) {
-    df <- data.frame(Value = c(6, 9, 4, 8),
-                     Label = c(1, 1, 1, 1))
+    df <- data.frame(Value = c(6),
+                     Label = c(penn_palettes[[palette_name]][1]))
   }
   else if (length(penn_palettes[[palette_name]]) == 2) {
-    df <- data.frame(Value = c(6, 9, 4, 8),
-                     Label = c(1, 2, 1, 2))
+    df <- data.frame(Value = c(6, 4),
+                     Label = c(penn_palettes[[palette_name]][1],
+                               penn_palettes[[palette_name]][2]))
   }
   else if (length(penn_palettes[[palette_name]]) == 3) {
-    df <- data.frame(Value = c(4, 6, 9),
-                     Label = c(1, 2, 3))
+    df <- data.frame(Value = c(6, 4, 2),
+                     Label = c(penn_palettes[[palette_name]][1],
+                               penn_palettes[[palette_name]][2],
+                               penn_palettes[[palette_name]][3]))
   }
   else if (length(penn_palettes[[palette_name]]) == 5) {
     df <- data.frame(Value = c(4, 6, 3, 7, 9),
@@ -81,23 +84,46 @@ penn.demo <- function(palette_name) {
   df$Label <- as.factor(df$Label)
 
   # Generate plot.
-  demo_plot <- ggplot2::ggplot(df,
-                               ggplot2::aes(x = Label,
-                                            y = Value)) +
-    ggplot2::geom_bar(stat = "identity",
-                      position = "dodge",
-                      ggplot2::aes(fill = Label)) +
-    ggthemes::theme_tufte() +
-    ggplot2::scale_fill_manual(values = penn_palettes[[palette_name]],
-                               labels = penn_palettes[[palette_name]]) +
-    ggplot2::theme(axis.title.x = ggplot2::element_blank(),
-                   axis.title.y = ggplot2::element_blank(),
-                   legend.title = ggplot2::element_blank(),
-                   plot.title = ggplot2::element_text(face = "bold",
-                                                      size = 16)) +
-    ggplot2::labs(title = palette_name)
+  # If palette is 1, 2, or 3 values long:
+  if (length(penn_palettes[[palette_name]]) <= 3) {
+    pie <- ggplot2::ggplot(df,
+                           ggplot2::aes(x = "",
+                                        y = Value,
+                                        fill = Label)) +
+          ggthemes::theme_tufte() +
+          ggplot2::geom_bar(stat = "identity",
+                            width = 1,
+                            color = "#000000") +
+          ggplot2::coord_polar("y",
+                               start = 0) +
+          ggplot2::scale_fill_manual(values = penn_palettes[[palette_name]]) +
+          ggplot2::theme(axis.text = ggplot2::element_blank(),
+                         axis.ticks = ggplot2::element_blank(),
+                         plot.title = ggplot2::element_text(face = "bold")) +
+          ggplot2::labs(x = "",
+                        y = "",
+                        fill = "",
+                        title = palette_name)
+    return(pie)
+  }
+  # Else:
+  bar <- ggplot2::ggplot(df,
+                         ggplot2::aes(x = Label,
+                                      y = Value)) +
+        ggplot2::geom_bar(stat = "identity",
+                          position = "dodge",
+                          ggplot2::aes(fill = Label)) +
+        ggthemes::theme_tufte() +
+        ggplot2::scale_fill_manual(values = penn_palettes[[palette_name]],
+                                   labels = penn_palettes[[palette_name]]) +
+        ggplot2::theme(axis.title.x = ggplot2::element_blank(),
+                       axis.title.y = ggplot2::element_blank(),
+                       legend.title = ggplot2::element_blank(),
+                       plot.title = ggplot2::element_text(face = "bold",
+                                                          size = 16)) +
+        ggplot2::labs(title = palette_name)
 
-  return(demo_plot)
+  return(bar)
 
 }
 
