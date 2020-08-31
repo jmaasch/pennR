@@ -3,11 +3,11 @@
 
 Color palettes for R data visualization based on the official school colors of the University of Pennsylvania.
 
-<p align="center">
- <img src="https://github.com/jmaasch/pennR/blob/master/figures/UniversityofPennsylvania_Shield_RGB.jpg" width="200"/>
-</p>
-
 ![density](https://github.com/jmaasch/pennR/blob/master/figures/density_grid.jpg)
+
+<p align="center">
+ <img src="https://github.com/jmaasch/pennR/blob/master/figures/UniversityofPennsylvania_Shield_RGB.jpg" width="100"/>
+</p>
 
 Built by JRMA Maasch (2020).
 
