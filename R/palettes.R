@@ -59,19 +59,16 @@ penn.demo <- function(palette_name) {
 
   # Construct dataframe.
   if (length(penn_palettes[[palette_name]]) == 1) {
-    df <- data.frame(Value = c(6),
-                     Label = c(penn_palettes[[palette_name]][1]))
+    df <- data.frame(Value = 6,
+                     Label = 1)
   }
   else if (length(penn_palettes[[palette_name]]) == 2) {
     df <- data.frame(Value = c(4, 6),
-                     Label = c(penn_palettes[[palette_name]][1],
-                               penn_palettes[[palette_name]][2]))
+                     Label = c(1, 2))
   }
   else if (palette_name == "Red-Blue-White") {
     df <- data.frame(Value = c(3, 3, 3),
-                     Label = c(penn_palettes[[palette_name]][1],
-                               penn_palettes[[palette_name]][2],
-                               penn_palettes[[palette_name]][3]))
+                     Label = c(1, 2, 3))
   }
   else if (length(penn_palettes[[palette_name]]) == 3) {
     df <- data.frame(Value = c(4, 6, 9),
@@ -106,7 +103,8 @@ penn.demo <- function(palette_name) {
                             color = line_color) +
           ggplot2::coord_polar("y",
                                start = 0) +
-          ggplot2::scale_fill_manual(values = penn_palettes[[palette_name]]) +
+          ggplot2::scale_fill_manual(values = penn_palettes[[palette_name]],
+                                     labels = penn_palettes[[palette_name]]) +
           ggplot2::theme(axis.text = ggplot2::element_blank(),
                          axis.ticks = ggplot2::element_blank(),
                          plot.title = ggplot2::element_text(face = "bold")) +
