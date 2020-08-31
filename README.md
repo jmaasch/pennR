@@ -58,7 +58,7 @@ Precede any function by a question mark to access description, arguments, return
 ?penn()
 ```
 
-All palettes are stored in exported lists:
+All palettes are stored in the exported list `penn_palettes`:
 
 ```R
 > names(penn_palettes)
