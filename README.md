@@ -17,6 +17,12 @@ Built by JRMA Maasch (2020).
 
 This package provides 13 color palettes based on the official school colors of the University of Pennsylvania. These color palettes are intended for data visualizations that must easily harmonize with Penn's official logo. ***Note:*** *This package is not endorsed in any way by the University of Pennsylvania.*
 
+Two categories of palettes are provided: "classic" palettes, which adhere strictly to the official color values of the Penn logo, and "interpolated" palettes, which interpolate between official Penn colors and white. For more information on the Penn logo, see https://branding.web-resources.upenn.edu/elements-penn-logo.
+
+![logo](https://github.com/jmaasch/pennR/blob/master/figures/penn_logo.jpg)
+![colors](https://github.com/jmaasch/pennR/blob/master/figures/penn_colors.jpg)
+
+
 ### License
 
 This package is licensed under the GNU General Public License v3.0 (<a href="https://choosealicense.com/licenses/gpl-3.0/" target="_blank">GPL-3</a>).
