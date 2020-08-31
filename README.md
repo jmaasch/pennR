@@ -1,4 +1,5 @@
-# `pennR`: University of Pennsylvania Color Palettes
+# `pennR`
+## University of Pennsylvania Color Palettes
 
 Color palettes for R data visualization based on the official school colors of the University of Pennsylvania.
 
@@ -16,6 +17,15 @@ Built by JRMA Maasch (2020).
 ## About
 
 This package provides 13 color palettes based on the official school colors of the University of Pennsylvania. These color palettes are intended for data visualizations that must easily harmonize with Penn's official logo. ***Note:*** *This package is not endorsed in any way by the University of Pennsylvania.*
+
+Two categories of palettes are provided: "classic" and "interpolated." Classic palettes adhere strictly to the official color values of the Penn logo. Interpolated palettes interpolate between the official Penn colors or between an official color value and white. For more information on the Penn logo, see https://branding.web-resources.upenn.edu/elements-penn-logo.
+
+<p align="center">
+ <img src="https://github.com/jmaasch/pennR/blob/master/figures/UniversityofPennsylvania_FullLogo_RGB.jpg" width="500"/>
+ <br>
+ <img src="https://github.com/jmaasch/pennR/blob/master/figures/penn_colors.jpg" width="800"/>
+</p>
+
 
 ### License
 
