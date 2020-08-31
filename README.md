@@ -67,7 +67,7 @@ All palettes are stored in exported lists:
 [11] "Red 3"          "Red 5"          "Red 8"
 ```
 
-To use a palette, pass the desired palette name as a string to one of the following functions:
+To use a palette, pass the desired palette name as a string to `penn()`:
 
 ```R
 my_palette <- penn("Blue 5")
