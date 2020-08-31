@@ -9,6 +9,8 @@ Color palettes for R data visualization based on the official school colors of t
  <img src="https://github.com/jmaasch/pennR/blob/master/figures/UniversityofPennsylvania_Shield_RGB.jpg" width="100"/>
 </p>
 
+<img src="https://github.com/jmaasch/pennR/blob/master/figures/UniversityofPennsylvania_Shield_RGB.jpg" width="100" align="right"/>
+
 Built by JRMA Maasch (2020).
 
 ***Note:*** *This package is not endorsed in any way by the University of Pennsylvania.*
