@@ -91,7 +91,7 @@ penn.demo <- function(palette_name) {
       line_color <- penn_palettes[[palette_name]][1]
     }
     else {
-      line_color <- "#000000"
+      line_color <- "#990000"
     }
     pie <- ggplot2::ggplot(df,
                            ggplot2::aes(x = "",
