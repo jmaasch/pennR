@@ -64,11 +64,11 @@ penn.demo <- function(palette_name) {
   }
   else if (length(penn_palettes[[palette_name]]) == 2) {
     df <- data.frame(Value = c(4, 6),
-                     Label = c(penn_palettes[[palette_name]][2],
-                               penn_palettes[[palette_name]][1]))
+                     Label = c(penn_palettes[[palette_name]][1],
+                               penn_palettes[[palette_name]][2]))
   }
   else if (palette_name == "Red-Blue-White") {
-    df <- data.frame(Value = c(6, 4, 3),
+    df <- data.frame(Value = c(3, 3, 3),
                      Label = c(penn_palettes[[palette_name]][1],
                                penn_palettes[[palette_name]][2],
                                penn_palettes[[palette_name]][3]))
@@ -89,7 +89,7 @@ penn.demo <- function(palette_name) {
 
   # Generate plot.
   # If palette is 1, 2, or 3 values long:
-  if (length(penn_palettes[[palette_name]]) <= 3) {
+  if (length(penn_palettes[[palette_name]]) <= 2 || palette_name == "Red-Blue-White") {
     if (length(penn_palettes[[palette_name]]) == 1) {
       line_color <- penn_palettes[[palette_name]][1]
     }
