@@ -90,8 +90,33 @@ Hexadecimal color codes are accessible as shown below. Demo plots also feature h
 
 ### Use with `ggplot2`
 
-Coming soon.
+The following reproducible example produces the plots below.
 
+```r
+
+# Construct toy data.
+set.seed(5)
+df <- data.frame(Label = factor(rep(c("A", "B", "C"), each = 200)),
+                 Value = round(c(rnorm(200, mean = 55, sd = 5), 
+                                 rnorm(200, mean = 65, sd= 5),
+                                 rnorm(200, mean = 70, sd = 4))))
+# Construct plot.
+density <- ggplot(df, 
+                  aes(x = Value, 
+                      fill = Label)) +
+          geom_density(alpha = 0.9,
+                       color = NA) +
+          theme_classic() +
+          theme(legend.position = "bottom",
+                legend.title = element_blank(),
+                axis.title = element_blank()) +
+          scale_x_continuous(expand = c(0, 0)) +
+          scale_fill_manual(values = penn("Blue-Red 3")) +
+          labs(title = "Blue-Red 3")
+
+```
+
+![density2](https://github.com/jmaasch/pennR/blob/master/figures/density_grid2.jpg)
 
 &#8593; [return to top](#pennR)
 
