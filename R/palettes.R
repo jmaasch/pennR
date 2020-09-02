@@ -112,6 +112,8 @@ penn.demo <- function(palette_name) {
                         y = "",
                         fill = "",
                         title = palette_name)
+
+    print(pie)
     return(invisible(pie))
   }
   # Else:
@@ -131,6 +133,7 @@ penn.demo <- function(palette_name) {
                                                           size = 16)) +
         ggplot2::labs(title = palette_name)
 
+  print(bar)
   return(invisible(bar))
 
 }
@@ -158,8 +161,6 @@ penn.demo.all <- function() {
     # Update plot list.
     plot_list[[i]] <- current_plot
     i <- i + 1
-
-    print(current_plot)
 
   }
 
