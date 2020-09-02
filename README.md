@@ -9,7 +9,7 @@ Built by JRMA Maasch (2020).
 
 ***Note: This package is not endorsed in any way by the University of Pennsylvania.***
 
-### Table of contents
+## Table of contents
 
 * **[About](#About)** &nbsp; | &nbsp; [License](#License)
 * **[Usage](#Usage)** &nbsp; | &nbsp; [Installation](#Installation) &nbsp; | &nbsp; [Documentation](#Documentation) &nbsp; | &nbsp; [Use with ggplot2](#Use-with-ggplot2) &nbsp; | &nbsp; [Use with base R](#Use-with-base-R)
