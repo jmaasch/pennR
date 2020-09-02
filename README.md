@@ -7,7 +7,7 @@ Color palettes for R data visualization based on the official school colors of t
 
 Built by JRMA Maasch (2020).
 
-***Note:*** *This package is not endorsed in any way by the University of Pennsylvania.*
+***Note: This package is not endorsed in any way by the University of Pennsylvania.***
 
 ### Table of contents
 
