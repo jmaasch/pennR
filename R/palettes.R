@@ -18,7 +18,19 @@ penn_palettes <- list(
   "Red 3" = c("#990000", "#C56F6F", "#E5BFBF"),
   "Red 5" = c("#990000", "#AF3737", "#C56F6F", "#DBA7A7", "#F2DFDF"),
   "Red 8" = c("#990000", "#A51F1F", "#B23F3F", "#BF5F5F",
-             "#CC7F7F", "#D89F9F", "#E5BFBF", "#F2DFDF")
+             "#CC7F7F", "#D89F9F", "#E5BFBF", "#F2DFDF"),
+  "Multicolor" = c("#990000",
+                   "#001f5b",
+                   "#127300",
+                   "#CCAA00",
+                   "#580084",
+                   "#4D4C4C",
+                   "#997373",
+                   "#737F99",
+                   "#799973",
+                   "#99995C",
+                   "#8C7399",
+                   "#8C8C8C")
 )
 
 #' Generate color palette.
